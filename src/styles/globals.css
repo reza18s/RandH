@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sass", sans-serif;
+  }
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  body {
+    color: rgba(64, 154, 255, 1);
+    @apply bg-dark-100;
+  }
+  section {
+    height: 100dvh;
+    scroll-snap-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+@layer utilities {
+  .social {
+    @apply w-4  sm:w-5  md:w-6 lg:w-7  xl:w-9;
+  }
+  .bg-p {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 29, 255, 1),
+      rgba(143, 233, 255, 1)
+    );
+  }
+  .navbar {
+    @apply bg-dark-150 flex h-14 w-full items-center justify-between pl-4 pr-5 md:h-[90px] md:pl-6 md:pr-8;
+  }
+}
