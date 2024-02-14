@@ -1,16 +1,46 @@
-import { pageLinks } from "../../../array";
+import { useState } from "react";
+import ToggleButton from "./ToggleButton";
+import { motion } from "framer-motion";
+import Links from "./Links";
+import Logo from "./Logo";
 
 function SideBar() {
+  const [open, setOpen] = useState(false);
+  const variants = {
+    open: {
+      clipPath: "circle(1200px at 50px 50px)",
+      transition: {
+        delay: 0,
+        type: "spring",
+        stiffness: 20,
+      },
+    },
+    closed: {
+      clipPath: "circle(20px at 30px 30px)",
+      transition: {
+        delay: 0,
+        type: "spring",
+        stiffness: 200,
+        damping: 40,
+      },
+    },
+  };
+
   return (
-    <nav className="bg-sb bg-dark-200 absolute flex h-full w-[100px] flex-col items-center sm:w-[150px] md:w-[250px] ">
-      <ul>
-        {pageLinks.map((i) => (
-          <li key={i.Url}>
-            <a href={i.Url}> {i.Url}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <motion.nav
+      animate={open ? "open" : "closed"}
+      className="flex h-full flex-col items-center bg-dark-200"
+    >
+      <motion.div
+        className="sidebar fixed bottom-0 left-0 top-0   bg-dark-200"
+        variants={variants}
+      >
+        <Logo></Logo>
+        <Links></Links>
+
+        <ToggleButton setOpen={setOpen}></ToggleButton>
+      </motion.div>
+    </motion.nav>
   );
 }
 export default SideBar;
