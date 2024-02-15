@@ -70,9 +70,16 @@ function Home() {
           src="/public/scroll.png"
         ></motion.img>
       </motion.div>
-      {/* <div className="absolute  bottom-[-90px] z-[-2] max-w-full overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]">
+      <motion.div
+        initial={{ x: 0 }}
+        animate={{
+          x: "-220%",
+          transition: { repeat: Infinity, repeatType: "mirror", duration: 40 },
+        }}
+        className="absolute  bottom-[-90px] z-[-2] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]"
+      >
         Writer Content Creator Influencer
-      </div> */}
+      </motion.div>
       <img src="/public/hero.png" className=""></img>
     </main>
   );
