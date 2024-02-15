@@ -9,5 +9,5 @@ export const pageLinks = [
   { Url: "Service", iconUrl: "/public/icons8-services (1).svg" },
   { Url: "Project", iconUrl: "/public/icons8-test-account-96.png" },
   { Url: "Contact", iconUrl: "/public/icons8-connect.svg" },
-  { Url: "About", iconUrl: "/public/icons8-services.svg" },
+  { Url: "About", iconUrl: "/public/icons8-about.svg" },
 ];
