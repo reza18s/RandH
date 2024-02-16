@@ -14,6 +14,20 @@ function Home() {
       },
     },
   };
+  const sliderVariants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: "-220%",
+      transition: {
+        repeat: Infinity,
+        repeatType: "mirror",
+        duration: 20,
+      },
+    },
+  };
+
   return (
     <main className="flex h-[calc(100dvh-60px)] w-full flex-col overflow-hidden bg-[linear-gradient(180deg,#000000,#439bff40)]  md:flex-row">
       <motion.div
@@ -71,12 +85,10 @@ function Home() {
         ></motion.img>
       </motion.div>
       <motion.div
-        initial={{ x: 0 }}
-        animate={{
-          x: "-220%",
-          transition: { repeat: Infinity, repeatType: "mirror", duration: 40 },
-        }}
-        className="absolute  bottom-[-90px] z-[-2] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+        className="absolute  bottom-[-90px] z-[-2] w-[50%] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]"
       >
         Writer Content Creator Influencer
       </motion.div>
