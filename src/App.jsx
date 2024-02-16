@@ -10,7 +10,7 @@ const App = () => {
         <Home></Home>
       </section>
 
-      <section id="Services">
+      <section id="Service">
         <Parallax type="services"></Parallax>
       </section>
       <section
@@ -19,10 +19,10 @@ const App = () => {
       >
         <Services></Services>
       </section>
-      <section id="Profile">
+      <section id="Project">
         <Parallax type="profile"></Parallax>
       </section>
-      <section id="project">Parallax</section>
+      <section id="Project">Parallax</section>
       <section id="Contact">contact</section>
     </div>
   );

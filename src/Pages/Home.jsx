@@ -29,7 +29,7 @@ function Home() {
   };
 
   return (
-    <main className="flex h-[calc(100dvh-60px)] w-full flex-col overflow-hidden bg-[linear-gradient(180deg,#000000,#439bff40)]  md:flex-row">
+    <main className="relative flex h-[calc(100dvh-60px)] w-full flex-col overflow-hidden bg-[linear-gradient(180deg,#000000,#439bff40)]  md:flex-row">
       <motion.div
         variants={textVariants}
         initial="initial"
@@ -88,7 +88,7 @@ function Home() {
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="absolute bottom-[-90px] z-[-2]  hidden w-[3000px] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10] md:flex"
+        className="absolute bottom-[-120px] z-[-2]  hidden overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10] md:flex"
       >
         Writer Content Creator Influencer
       </motion.div>
