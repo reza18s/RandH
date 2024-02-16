@@ -32,7 +32,7 @@ function SideBar() {
       className="flex h-full flex-col items-center bg-dark-200"
     >
       <motion.div
-        className={`sidebar fixed bottom-0 left-0 top-0  bg-dark-200 ${open ? "flex" : "hidden"}`}
+        className={`sidebar  bottom-0 left-0 top-0 bg-dark-200`}
         variants={variants}
       >
         <Logo></Logo>
