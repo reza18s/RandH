@@ -19,11 +19,11 @@ function Home() {
       x: 0,
     },
     animate: {
-      x: "-220%",
+      x: "-65%",
       transition: {
         repeat: Infinity,
         repeatType: "mirror",
-        duration: 20,
+        duration: 1,
       },
     },
   };
@@ -88,7 +88,7 @@ function Home() {
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="absolute  bottom-[-90px] z-[-2] w-[50%] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]"
+        className="absolute  bottom-[-90px] z-[-2] w-[3000px] overflow-hidden whitespace-nowrap text-[50vh] text-[#ffffff10]"
       >
         Writer Content Creator Influencer
       </motion.div>
