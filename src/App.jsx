@@ -1,5 +1,6 @@
 import Home from "./Pages/home";
 import Parallax from "./Pages/parallax";
+import Services from "./Pages/service";
 import NavBar from "./components/Nav/Navbar";
 const App = () => {
   return (
@@ -9,10 +10,15 @@ const App = () => {
         <Home></Home>
       </section>
 
-      <section id="Service">
+      <section id="Services">
         <Parallax type="services"></Parallax>
       </section>
-      <section>Services</section>
+      <section
+        className="bg-[linear-gradient(180deg,#000000,#439bff20)]"
+        id="Services"
+      >
+        <Services></Services>
+      </section>
       <section id="Profile">
         <Parallax type="profile"></Parallax>
       </section>

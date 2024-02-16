@@ -32,7 +32,7 @@ function Parallax({ type }) {
         style={{ x: abg }}
         className="absolute  h-full w-full bg-[url('/stars.png')] bg-cover bg-bottom"
       ></motion.div>
-      <motion.div className="absolute h-full w-full bg-[url('/mountains.png')] bg-contain bg-bottom bg-no-repeat 2xl:bg-cover"></motion.div>
+      <motion.div className="absolute h-full w-full bg-[url('/mountains.png')] bg-contain bg-bottom bg-no-repeat md:bg-cover"></motion.div>
     </main>
   );
 }
