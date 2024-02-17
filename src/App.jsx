@@ -1,3 +1,4 @@
+import Project from "./Pages/Project";
 import Home from "./Pages/home";
 import Parallax from "./Pages/parallax";
 import Services from "./Pages/service";
@@ -23,7 +24,7 @@ const App = () => {
       <section id="Project">
         <Parallax type="profile"></Parallax>
       </section>
-      <section id="Project">Parallax</section>
+      <Project></Project>
       <section id="Contact">contact</section>
     </div>
   );
