@@ -22,7 +22,7 @@ function NavBar() {
         >
           {socialIconUrl.map((i) => (
             <motion.li key={i.Url} variants={variants}>
-              <a href="#">
+              <a href={i.Link}>
                 <img src={i.Url} alt="" className="social" />
               </a>
             </motion.li>

@@ -1,8 +1,16 @@
 export const socialIconUrl = [
-  { Url: "/icons8-youtube.svg" },
-  { Url: "/icons8-instagram.svg" },
-  { Url: "/icons8-facebook.svg" },
-  { Url: "/icons8-dribbble.svg" },
+  {
+    Url: "/icons8-youtube.svg",
+    Link: "https://www.youtube.com/@rezaandhamze",
+  },
+
+  { Url: "/icons8-facebook.svg", Link: "" },
+  { Url: "/icons8-whatsapp.svg", Link: "https://wa.me/message/RICVZ44PFD4FO1" },
+  { Url: "/public/icons8-telegram.svg", Link: "https://t.me/reza_17s" },
+  {
+    Url: "/icons8-instagram.svg",
+    Link: "https://www.instagram.com/reza.s.16?utm_source=qr&igsh=aW5pZWx4bng2a3pj",
+  },
 ];
 export const pageLinks = [
   { Url: "Home", iconUrl: "/icons8-home.svg" },
@@ -14,23 +22,15 @@ export const pageLinks = [
 export const servicesDescription = [
   {
     id: 1,
+    title: "سایت وردپرس",
     Description:
-      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
-  },
-  {
-    id: 2,
-    Description:
-      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+      "ایجاد سایت وردپرسی با طراحی های خلاقانه و به روز با سطوح یوای و یوایکس بالا، سئوی بالا، سرعت بارگذاری بالا و خدمات دامنه و هاست",
+    MoreDescription: "bla bla bla",
   },
   {
     id: 3,
-    Description:
-      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
-  },
-  {
-    id: 4,
-    Description:
-      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+    title: "سایت اختصاصی",
+    Description: "",
   },
 ];
 export const Projects = [

@@ -56,22 +56,27 @@ function Home() {
           variants={textVariants}
           className="flex flex-row gap-[20px]  "
         >
-          <motion.button
-            variants={textVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="button rounded-md bg-transparent p-2 text-[15px] font-light lg:text-[20px]"
-          >
-            See the Latest Work
-          </motion.button>
-          <motion.button
-            variants={textVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="rounded-md bg-primary-500 p-2 text-[15px] text-white lg:text-[20px]"
-          >
-            Contact me
-          </motion.button>
+          {" "}
+          <a href="#Project">
+            <motion.button
+              variants={textVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="button rounded-md bg-transparent p-2 text-[15px] font-light lg:text-[20px]"
+            >
+              See the Latest Work
+            </motion.button>
+          </a>
+          <a href="#Contact">
+            <motion.button
+              variants={textVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-md bg-primary-500 p-2 text-[15px] text-white lg:text-[20px]"
+            >
+              Contact me
+            </motion.button>
+          </a>
         </motion.div>
         <motion.img
           // variants={textVariants}
