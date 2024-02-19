@@ -22,15 +22,23 @@ export const pageLinks = [
 export const servicesDescription = [
   {
     id: 1,
-    title: "سایت وردپرس",
     Description:
-      "ایجاد سایت وردپرسی با طراحی های خلاقانه و به روز با سطوح یوای و یوایکس بالا، سئوی بالا، سرعت بارگذاری بالا و خدمات دامنه و هاست",
-    MoreDescription: "bla bla bla",
+      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+  },
+  {
+    id: 2,
+    Description:
+      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
   {
     id: 3,
-    title: "سایت اختصاصی",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+  },
+  {
+    id: 4,
+    Description:
+      "Lorem ipsum dolor sitametconsectetur adipisicing elit. Nostrumlibero enim nisi aliquam consectetur expedita magni eius ex corruptianimi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
 ];
 export const Projects = [

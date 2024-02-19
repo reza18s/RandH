@@ -86,14 +86,15 @@ const Services = () => {
         <div className="max-w-[80%] flex-row items-center justify-center xl:flex">
           {servicesDescription.map((i) => (
             <motion.div
-              className="hr m-5 rounded-2xl p-[30px] text-end text-white"
-              whileHover={{ background: "lightgray", color: "black" }}
+              className="hr noto-sans m-5 rounded-2xl p-[30px] text-end text-white hover:bg-white hover:text-black"
               key={i.id}
             >
-              <h1 className="pb-3 font-bold">{i.title}</h1>
-              <p className="pb-5 text-[15px] md:text-[20px]">{i.Description}</p>
-              <button className="mt-3 w-[100%] rounded-[10px]  bg-primary-500 p-2">
-                Go
+              <h1 className="noto-sans pb-3  font-extrabold">{i.title}</h1>
+              <p className="noto-sans pb-5 text-[15px] md:text-[20px]">
+                {i.Description}
+              </p>
+              <button className=" mt-3 w-[100%]  rounded-[10px] bg-primary-500  p-2">
+                خواندن بیشتر
               </button>
             </motion.div>
           ))}
