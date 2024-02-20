@@ -2,6 +2,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
+import Services from "./Service";
 function Parallax({ type }) {
   const ref = useRef();
 
@@ -26,7 +27,7 @@ function Parallax({ type }) {
 
       <motion.div
         style={{ y: abg }}
-        className="absolute h-full w-full bg-[url('/planets.png')] bg-contain bg-bottom bg-no-repeat md:bg-cover"
+        className={`absolute h-full w-full bg-contain bg-bottom bg-no-repeat md:bg-cover ${type == "services" ? "bg-[url('/planets.png')]" : "bg-[url('/sun.png')]"}`}
       ></motion.div>
       <motion.div
         style={{ x: abg }}

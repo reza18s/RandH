@@ -26,7 +26,7 @@ function Links() {
           },
         },
       }}
-      className="flex w-[80%] flex-col items-start gap-2"
+      className="flex w-[80%] flex-col items-start gap-4"
     >
       {pageLinks.map((i) => (
         <a href={`#${i.Url}`} key={i.Url} className="w-full">
@@ -35,9 +35,9 @@ function Links() {
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="flex h-6 w-full items-center gap-1 rounded-sm hover:bg-blue-500 hover:text-white md:h-8"
+            className="flex w-full flex-row items-center gap-1 rounded-sm text-[25px] hover:bg-blue-500 hover:text-white md:h-8 xl:text-[35px]"
           >
-            <img src={i.iconUrl} className="h-5"></img>
+            <img src={i.iconUrl} className="h-7"></img>
             {i.Url}
           </motion.li>
         </a>

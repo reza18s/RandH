@@ -59,9 +59,9 @@ const Services = () => {
         variants={variants}
         className="flex flex-row items-center justify-end pt-[40px] text-end text-[15px] text-gray-500 md:text-[20px]"
       >
-        <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+        <p className="mr-4">
+          من در رشد کسب و کار شما کمک میکنم
+          <br />
         </p>
         <hr className="hr w-[20%] bg-gray-500" />
       </motion.header>

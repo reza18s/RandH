@@ -72,9 +72,10 @@ const Contact = () => {
         </motion.h1>
         <motion.div className="grid grid-cols-2 gap-4 md:grid-cols-1 ">
           <motion.div className="item" variants={variants}>
-            <h2 className="text-[25px] font-bold md:text-[40px]">Mail</h2>
+            <h2 className="text-[25px] font-bold md:text-[40px]">Phone</h2>
             <span className="text-[17px] font-[300] md:text-[25px]">
-              rezaandhamze@gmail.com
+              {/* {english.phoneNumber} */}
+              0936 526 1859
             </span>
           </motion.div>
           <motion.div className="item" variants={variants}>
@@ -84,10 +85,9 @@ const Contact = () => {
             </span>
           </motion.div>
           <motion.div className="item" variants={variants}>
-            <h2 className="text-[25px] font-bold md:text-[40px]">Phone</h2>
+            <h2 className="text-[25px] font-bold md:text-[40px]">Mail</h2>
             <span className="text-[17px] font-[300] md:text-[25px]">
-              {/* {english.phoneNumber} */}
-              0936 526 1859
+              rezaandhamze@gmail.com
             </span>
           </motion.div>
         </motion.div>

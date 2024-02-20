@@ -32,7 +32,9 @@ function SideBar() {
       className="z-10 flex h-full flex-col items-center bg-dark-200"
     >
       <motion.div
-        className={`sidebar  bottom-0 left-0 top-0 bg-dark-200`}
+        className={`sidebar bottom-0 left-0 top-0 bg-dark-200`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         variants={variants}
       >
         <Logo></Logo>
