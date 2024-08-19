@@ -1,11 +1,11 @@
 import Project from "./Pages/Project";
-import Contact from "./Pages/contact";
-import Home from "./Pages/home";
-import Parallax from "./Pages/parallax";
+import Home from "./Pages/Home";
+import Parallax from "./Pages/Parallax";
 import Services from "./Pages/Service";
 import NavBar from "./components/Nav/Navbar";
 import "./styles/globals.css";
 import { Toaster } from "react-hot-toast";
+import Contact from "./Pages/Contact";
 const App = () => {
   return (
     <div className="">
